@@ -1,0 +1,9 @@
+.bg-main-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(1 22 39 / var(--tw-bg-opacity))
+}
+
+.text-comment-100 {
+    --tw-text-opacity: 1;
+    color: rgb(96 123 150 / var(--tw-text-opacity));
+}
