@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,24 +12,18 @@ import Contact from './pages/Contact';
 import Bookmark from './pages/Bookmark';
 import NotFound from './pages/NotFound';
 
-import List from './components/List'
-
 import Logo from './assets/svgs/logo.svg'
 import FrameLogo from './assets/svgs/frame_logo.svg'
 
 import './App.css'
 
 function App() {
-  const ellipseRightStyle = "fixed rounded-full w-[160px] md:w-[250px] h-[160px] md:h-[250px] left-[15%] top-[15%] blur-[50px] bg-gradient-to-b from-[#363CCE] to-[#3DCDB3] -z-10";
-
-  const ellipseLeftStyle = "fixed rounded-full w-[160px] md:w-[250px] h-[160px] md:h-[250px] right-[15%] bottom-[15%] blur-[50px] bg-gradient-to-b from-[#CC7AC4] to-[#EB872A] -z-10";
-
   return (
     <Router>
-      <div className='relative h-screen flex flex-col p-10 select-none'>
+      <div className='relative h-screen flex flex-col p-5 sm:p-10 select-none'>
         <div className='flex flex-col h-full  rounded-xl'>
 
-          <div className='flex justify-center items-center absolute top left gap-5'>
+          <div className='flex justify-center items-center absolute top left gap-5 p-2 sm:p-0 z-10'>
             <img src={Logo} className=' size-[32px]' />
             <div className='flex justify-center items-center gap-1 bg-[#173729] rounded-[15px] pr-2'>
 
@@ -47,9 +41,6 @@ function App() {
           </div>
 
           <NavBar />
-
-          {/* <div className={ellipseRightStyle}></div>
-          <div className={ellipseLeftStyle}></div> */}
 
           {/* ===================================================== */}
 

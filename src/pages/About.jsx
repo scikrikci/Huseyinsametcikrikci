@@ -3,12 +3,10 @@ import { RiScrollToBottomFill } from "react-icons/ri";
 import MeImage from "../assets/me.jpg";
 import SocialLinks from "../components/SocialLinks";
 
-import Items from "../components/List";
+import Card from "../components/Card";
 
 function About() {
     const workList = [
-        { title: "Digitastic", desc: "Web scraper", date: "2021 - 2023" },
-        { title: "Digitastic", desc: "Web scraper", date: "2021 - 2023" },
         { title: "Digitastic", desc: "Web scraper", date: "2021 - 2023" },
     ];
 
@@ -26,7 +24,7 @@ function About() {
             <div className="w-full h-screen-padded">
                 <div className=" h-full flex flex-col justify-center items-center relative p-0 sm:px-20 md:px-24 pb-0">
                     <div className="h-full flex flex-col justify-center items-center mx-0 sm:mx-auto gap-6 about_me">
-                        <div className="relative text-[24px] font-lexend font-bold w-full md:w-auto md:self-start text-left">
+                        <div className="relative text-[24px] font-lexend font-bold w-full md:w-auto md:self-start text-left mt-60 sm:mt-0">
                             Thats Me.
                             <img
                                 src={IconArrow}
@@ -34,6 +32,10 @@ function About() {
                             />
                         </div>
                         <div className="flex flex-col md:flex-row justify-center items-center gap-[47px] h-auto md:h-[324px]">
+                            <img
+                                src={MeImage}
+                                className="w-[190px] sm:w-[239px] h-auto rounded-xl border-2 border-white shadow-2xl shadow-cyan-500/50"
+                            />
                             <div className="w-[300px] md:w-[404px] h-auto font-sans text-[14px] sm:text-[16px] md:text-left flex flex-col gap-4">
                                 <p>
                                     I am deeply passionate about learning and always open to
@@ -51,10 +53,6 @@ function About() {
                                     exploring unique cafes.
                                 </p>
                             </div>
-                            <img
-                                src={MeImage}
-                                className="w-[190px] sm:w-[239px] h-auto rounded-xl border-2 border-white shadow-2xl shadow-cyan-500/50"
-                            />
                         </div>
                         <SocialLinks />
                         <div className="relative flex justify-center items-center ">
@@ -69,31 +67,31 @@ function About() {
 
             {/*  */}
             <div className="h-screen-padded flex flex-col gap-10 justify-center items-center">
-                <Items items={workList} title="Work" />
-                <Items items={educationList} title="Education" />
+                <Card items={workList} title="Work" />
+                <Card items={educationList} title="Education" />
             </div>
             {/*  */}
 
-            <div className="flex flex-wrap gap-[45px] justify-center p-5">
-                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[14px] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
+            <div className="flex flex-wrap gap-[45px] justify-center p-5 text-[8px] sm:text-[14px]">
+                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
                     Keychrone K3
                 </div>
-                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[14px] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
+                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
                     Magic Trackpad
                 </div>
-                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[14px] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
-                    Lg 29" UltraWide
+                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
+                    Lg 2`` UltraWide
                 </div>
-                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[14px] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
-                    Asus 24"
+                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
+                    Asus 2``
                 </div>
-                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[14px] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
+                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
                     SonyWh 1000xm4
                 </div>
-                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[14px] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
+                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
                     Deathadder v3 Pro
                 </div>
-                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[14px] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
+                <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
                     Macbook M2 Air
                 </div>
             </div>
