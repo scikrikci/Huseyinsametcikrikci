@@ -79,7 +79,7 @@ function About() {
       </div>
       {/*  */}
 
-      <div className="flex flex-wrap gap-[45px] justify-center p-5 md:px-[30%] text-[10px] sm:text-[14px]">
+      <div className="flex flex-wrap gap-[45px] justify-center p-5 md:px-[30%] text-[12px] sm:text-[14px]">
         <div className="h-[50px] bg-[#09090a] border border-[#222222] hover:bg-[#0f0f0f] text-[#71717a] px-3 font-lexend flex items-center justify-center rounded-md">
           Keychrone K3
         </div>
