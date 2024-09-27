@@ -33,6 +33,7 @@ export default {
         'rubik': ["Rubik Mono One", 'monospace', 'normal'],
         'titan': ["Titan One", 'sans-serif', 'normal'],
         'lexend': ['Lexend', 'sans-serif', 'normal'],
+        'fira': ['Fira Code', 'monospace', 'normal'],
       },
       keyframes: {
         pulse: {

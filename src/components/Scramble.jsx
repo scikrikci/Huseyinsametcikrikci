@@ -1,11 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 
-const ScrambleText = ({ text, class_name }) => {
+function ScrambleText(props) {
+    const { text, class_name } = props;
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-
-
     const [scrambled, setScrambled] = useState(text);
 
     useEffect(() => {
@@ -40,7 +38,7 @@ const ScrambleText = ({ text, class_name }) => {
         <h1
             data-value={text}
             onMouseOver={handleMouseOver}
-            className={class_name} // Dinamik olarak sınıf ekleyebiliriz
+            className={class_name}
         >
             {scrambled}
         </h1>
