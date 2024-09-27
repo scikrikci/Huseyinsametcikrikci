@@ -43,7 +43,7 @@ function App() {
 
           {/* ===================================================== */}
 
-          <div className="relative overflow-y-scroll content grow">
+          <div className="relative content grow">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />

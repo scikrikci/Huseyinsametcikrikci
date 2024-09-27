@@ -30,7 +30,8 @@ function Projects() {
   };
 
   return (
-    <section className="flex flex-col items-center mt-32 gap-[60px]">
+    <section className="flex flex-col items-center my-32 mt-16 gap-[60px]">
+      <h1 className="font-fira text-xl font-bold">My Projects</h1>
       {items.map((item, index) => (
         <div
           key={item.text}
