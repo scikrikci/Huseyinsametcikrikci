@@ -70,6 +70,7 @@ export default {
       },
       height: {
         'screen-padded': 'calc(100vh - 80px)', // Padding'i hesaba katar
+        'screen-section': 'calc(100vh - 200px)', // Padding'i hesaba katar
       },
     },
   },

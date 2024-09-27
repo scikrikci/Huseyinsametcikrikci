@@ -30,14 +30,23 @@ function NavBar() {
           }
         >
           <div
-            className={`${item.bgColor} w-[50px] h-[50px] flex justify-center items-center rounded-[12px] bg-[rgba(14,16,17,0.5)] border-2 border-[#0E1011] backdrop-blur-[2px] transform transition-transform duration-200 ease-in-out group-hover:scale-110 group-active:scale-90 group-hover:border-white`}
+            className={`${item.bgColor} w-[50px] h-[50px] rounded-[12px] bg-[rgba(14,16,17,0.5)] border-2 border-[#0E1011] backdrop-blur-[2px] transform transition-transform duration-200 ease-in-out group-hover:scale-110 group-active:scale-90 group-hover:border-white sm:block hidden`}
           >
-            {item.icon}
+            {/* SVG ikonun kendisi */}
+            <span className="w-full h-full flex justify-center items-center">
+              {item.icon}
+            </span>
           </div>
+
           <div className="hidden sm:block absolute bottom-[58px] left-1/2 transform -translate-x-1/2 translate-y-2 opacity-0 px-2 py-1 text-[13px] text-[rgba(255,255,255,0.4)] transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 font-titan">
             {item.label}
           </div>
-          <div className="absolute w-[24px] h-[4px] rounded-[2px] bg-[#353535] -top-[10px] left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+          <div
+            className={`${item.bgColor} block sm:hidden p-4 items-center rounded-[12px] bg-[rgba(14,16,17,0.5)] border-2 border-[#0E1011] backdrop-blur-[2px] transform transition-transform duration-200 ease-in-out group-hover:scale-110 group-active:scale-90 group-hover:border-white`}
+          >
+            <p className="text-sm">{item.label}</p>
+          </div>
         </NavLink>
       ))}
       <a href="mailto:samet0tx@gmail.com" className="relative group">
