@@ -22,14 +22,14 @@ function About() {
   return (
     <section className="w-full mb-20">
       {/*  */}
-      <div className="w-full h-full mt-16 md:mt-10">
+      <div className="w-full h-full md:h-screen-padded flex flex-col justify-center pt-16 sm:pt-0">
         <div className="flex flex-col justify-center items-center">
           <ScrambleText
             text="Huseyin Samet Cikrikci"
             class_name={`font-bold text-white overflow-hidden whitespace-nowrap animate-typing text-[22px] md:text-[35px] lg:text-[60px] font-titan px-2 rounded-lg mb-5`}
           />
         </div>
-        <div className=" h-full flex flex-col justify-center items-center relative p-0 sm:px-20 md:px-24 pb-0">
+        <div className="flex flex-col justify-center items-center relative p-0 sm:px-20 md:px-24 pb-0">
           <div className="h-full flex flex-col justify-center items-center mx-0 sm:mx-auto gap-6 about_me">
             <div className="relative text-[24px] font-lexend font-bold w-full md:w-auto md:self-start text-left sm:mt-0">
               About Me.
@@ -63,7 +63,7 @@ function About() {
             </div>
             <SocialLinks />
             <div className="relative flex justify-center items-center ">
-              <RiScrollToBottomFill className="absolute hidden sm:block size-7 animate-scrollupdown top-6 opacity-25" />
+              <RiScrollToBottomFill className="absolute hidden sm:block size-7 animate-scrollupdown top-0 opacity-25" />
             </div>
           </div>
         </div>
