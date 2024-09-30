@@ -146,8 +146,7 @@ function About() {
     {
       icon: <FaDatabase className="size-5" />,
       label: "Database",
-      class: "-right-2 md:-right-0",
-      class2: "-left-2 md:-left-22 lg:left-auto",
+      class: "-right-2 md:-right-22 lg:right-auto",
       content: [
         {
           content: "PostgreSQLa",
