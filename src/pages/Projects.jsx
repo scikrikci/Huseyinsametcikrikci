@@ -9,6 +9,12 @@ function Projects() {
       git: "https://github.com/scikrikci/xpath-to-css-vue3",
       page: "https://xpath-to-css-vue3.vercel.app/",
     },
+    {
+      text: "Speech To Text",
+      techs: ["React", "SpeechRecognition", "Scss"],
+      git: "https://github.com/scikrikci/speech-to-text",
+      page: "https://hsc-speech-to-text.vercel.app/",
+    },
   ];
 
   const [openModals, setOpenModals] = useState(Array(items.length).fill(false));
