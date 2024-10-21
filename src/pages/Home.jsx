@@ -240,7 +240,7 @@ function About() {
   const location = useLocation();
   useEffect(() => {
     const requestOptions = {
-      method: "GET",
+      method: "POST",
       redirect: "follow",
     };
 
