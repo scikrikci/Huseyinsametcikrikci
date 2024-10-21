@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import IconArrow from "../assets/svgs/arrow.svg";
 
@@ -229,12 +230,29 @@ function About() {
     });
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const location = useLocation();
+  useEffect(() => {
+    const requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+
+    fetch(
+      "https://hscapi.vercel.app/visit-count/increment-count",
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.error(error));
+  }, [location]);
+
   return (
     <section className="w-full mb-20">
       {/*  */}
